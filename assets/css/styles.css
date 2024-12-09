@@ -1,0 +1,450 @@
+
+
+  .about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .text-content {
+    flex: 1;
+    padding: 30px;
+    text-align: justify;
+  }
+
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0a74da;
+    margin-bottom: 10px;
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+  }
+
+  .image-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .image-container img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .sudocom {
+    background-image: url(assets\img\ng1.png);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 15px;
+
+  }
+/* Style global pour les sections "about-section" */
+.about-section {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer les éléments sur une nouvelle ligne si nécessaire */
+  justify-content: space-between; /* Espacement uniforme entre les éléments */
+  align-items: center; /* Aligne verticalement le contenu */
+  gap: 16px; /* Espacement entre les blocs */
+  margin: 16px 0;
+}
+
+/* Styles pour les textes */
+.text-content {
+  flex: 1; /* Prend tout l'espace disponible */
+  max-width: 600px; /* Limite la largeur sur les grands écrans */
+}
+
+/* Styles pour les images */
+.image-container {
+  flex: 1; /* Prend tout l'espace disponible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Les images ne dépassent pas la taille du conteneur */
+  height: auto; /* Préserve les proportions */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre esthétique */
+  transition: transform 0.3s ease; /* Effet zoom au survol */
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+}
+
+/* Styles pour mobiles */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Passe le contenu (texte et image) en colonne */
+    text-align: center; /* Centre le texte */
+  }
+
+  .text-content {
+    max-width: 100%; /* Texte prend toute la largeur */
+    margin-bottom: 16px; /* Espacement entre le texte et l'image */
+  }
+
+  .image-container {
+    margin: 0 auto; /* Centre les images */
+  }
+
+  .photo-row {
+    grid-template-columns: 1fr; /* Une seule colonne pour les photos */
+    gap: 12px; /* Réduction de l'espacement entre les photos */
+  }
+}
+
+  
+  .text-content {
+    flex: 1;
+  
+  }
+  
+  .text-content h1, h2, h3 {
+    color: #414040;
+  }
+  
+  .text-content p, ul {
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .sudoba {
+    color: black;
+  }
+  .hrto {
+    margin: 15px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .photo-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.photo-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-row img:hover {
+    transform: scale(1.05);
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #0a74da;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-text small {
+  color: #474646;
+  font-style: italic;
+}
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f7fa;
+  color: #333;
+}    h1, h3 {
+  color: #0a74da;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  color: #0a74da;
+  margin-right: 10px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.form-control:focus {
+  border-color: #0a74da;
+  box-shadow: 0 0 5px rgba(10, 116, 218, 0.5);
+}
+
+.btn-primary {
+  background-color: #0a74da;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #297fc5;
+}
+
+.message-motivation {
+  font-style: italic;
+  color: #777;
+  margin-top: 30px;
+  text-align: center;
+}
+/* Style pour l'en-tête */
+header .navbar {
+  transition: all 0.3s ease;
+}
+
+header .navbar:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les liens */
+.navbar-nav .nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  bottom: -4px;
+  left: 50%;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Logo */
+.navbar-brand img {
+  border-radius: 60%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: rotate(360deg);
+}
+
+/* Menu Hamburger */
+.navbar-toggler {
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+footer {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-top: 2px solid #dee2e6;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+footer .bi {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .bi:hover {
+  color: #007bff;
+  transform: rotate(360deg);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #4e5154;
+}
+/* Style global pour les conteneurs d'images */
+.image-container {
+  display: flex;
+  justify-content: center; /* Centre les images horizontalement */
+  align-items: center; /* Centre les images verticalement */
+  margin: 16px 0; /* Espacement vertical */
+}
+
+.image-container img {
+  max-width: 100%; /* Limite la largeur des images à la taille du conteneur */
+  height: auto; /* Préserve les proportions */
+  border-radius: 8px; /* Coins arrondis pour uniformité */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre esthétique */
+  transition: transform 0.3s ease; /* Effet au survol */
+}
+
+/* Effet zoom au survol */
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Gestion spécifique pour les grilles de photos */
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Grille responsive */
+  gap: 16px; /* Espacement entre les images */
+}
+
+.photo-row img {
+  width: 100%; /* Les images occupent toute la largeur de leur cellule */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.photo-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsiveness pour les petits écrans */
+@media (max-width: 768px) {
+  /* Les conteneurs d'images s'empilent verticalement */
+  .image-container {
+    flex-direction: column;
+    margin: 8px 0; /* Réduction de l'espacement */
+  }
+
+
+}
