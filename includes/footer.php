@@ -14,7 +14,7 @@
                     <a href="https://www.facebook.com/profile.php?id=61569133838440" target="_blank" class="text-dark">
                         <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
                     </a>
-                    <a href="https://www.instagram.com/andrix_ng243?igsh=MWx3Z2UxMWpsc2ZmaQ==" target="_blank"
+                    <a href="https://www.instagram.com/andrix_ngoyi/profilecard/?igsh=MWM0NGQwYWZpNnFlZA==" target="_blank"
                         class="text-dark">
                         <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
                     </a>

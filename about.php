@@ -15,7 +15,7 @@
               fluides qui répondent aux besoins des utilisateurs.
 
               Mon parcours m’a permis d’acquérir une expertise en HTML, CSS, JavaScript, ainsi qu’en frameworks comme
-              React.js. Je suis constamment à l’affût des dernières tendances et meilleures pratiques du développement
+              vue.js. Je suis constamment à l’affût des dernières tendances et meilleures pratiques du développement
               pour offrir des solutions innovantes et adaptées.
 
               Je crois fermement en l’importance de la collaboration et de l’amélioration continue. Chaque projet est
@@ -36,8 +36,8 @@
 
     <!-- Gallery Section -->
     <section>
-      <h4 class="text-center mb-4">laisse parler ton imagination</h4>
-      <div class="photo-row">
+    <h4 class="text-center mb-4">laisse parler ton imagination</h4>
+    <div class="photo-row">
         <?php
         // Chemins des images
         $photos = [
@@ -52,11 +52,50 @@
 
         // Génération dynamique des images
         foreach ($photos as $photo) {
-          echo "<img src='$photo' alt='Photo'>";
+          echo "<img src='$photo' alt='Photo' class='photo-item'>";
         }
         ?>
-      </div>
-    </section>
+    </div>
+</section>
+
+<style>
+  /* Conteneur pour la galerie */
+  .photo-row {
+    display: flex;
+    overflow-x: auto; /* Permet un scroll horizontal */
+    scroll-snap-type: x mandatory; /* Scroll fluide */
+    gap: 10px; /* Espacement entre les images */
+    padding: 10px; /* Ajout de padding autour du contenu */
+  }
+
+  /* Style des images */
+  .photo-item {
+    flex: 0 0 auto; /* Empêche les images de s'étirer */
+    width: 20vw; /* Largeur dynamique basée sur la taille de l'écran */
+    max-width: 150px; /* Largeur maximale pour éviter les trop grandes tailles */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    scroll-snap-align: start; /* Alignement parfait sur le scroll */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition fluide pour les effets */
+  }
+
+  /* Effet au survol des images */
+  .photo-item:hover {
+    transform: scale(1.1); /* Zoom léger sur l'image au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour de l'image */
+  }
+
+  /* Ajout d'une barre de défilement personnalisée */
+  .photo-row::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .photo-row::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 8px;
+  }
+</style>
+
 
     <!-- Section Part Designer & Part Coder -->
     <section>
@@ -80,10 +119,9 @@
             <h3>i like</h3>
             <ul>
               <li>TailwindCSS</li>
-              <li>Vue.js</li>
-              <li>Symfony, etc</li>
+              <li>Vue.js, etc</li>
             </ul>
-          </div>
+          </div> 
           <div class="image-container">
             <img src="assets\img\WhatsApp Image 2024-11-20 at 20.16.27_29c683f9.jpg" alt="Andrix Ng"
               class="rounded float-start" />
